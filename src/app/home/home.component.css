@@ -1,0 +1,9 @@
+nav{
+    color: blue;
+}
+#left{
+    font-size: 20px;
+    display: flex;
+    justify-content: right;
+    
+}
