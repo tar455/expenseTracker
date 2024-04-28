@@ -1,9 +1,15 @@
 nav{
-    color: blue;
+    color: rgb(45, 204, 75);
 }
-#left{
-    font-size: 20px;
-    display: flex;
-    justify-content: right;
-    
+nav ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+nav li{
+    display: inline;
+    margin-right: 10px;
+}
+hr{
+    text-shadow: none;
 }
