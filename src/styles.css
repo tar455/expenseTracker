@@ -1,4 +1,91 @@
-body{
-    background-color: #000000; 
-    color: aliceblue;
-}
+body {
+    background: linear-gradient(to right, #589263de, #334082e6, #8f314b);
+    font-family: Roboto, 'sans-serif';
+    color: white;
+    font-weight: 400;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: stretch;
+  }
+  
+  .main-container {
+    margin-top: 4.5rem;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0.1rem 0.5rem 1.5rem 0.6rem rgb(91 85 85 / 20%);
+    padding: 25px;
+    background: #d97e38b5;
+    border-radius: 10px;
+  
+    .expense-row {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      min-width: 395px;
+      .title {
+        text-align: center;
+      }
+      .form-container {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        .form {
+          display: flex;
+          gap: 8px;
+          .app-form-controls {
+            display: flex;
+            flex-direction: column;
+            label {
+              font-weight: 400;
+            }
+            input {
+              color: black;
+            }
+          }
+          .form-btn__remove {
+            align-self: flex-end;
+          }
+        }
+      }
+    }
+  }
+  
+  .form-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    button {
+      padding: 3px 6px;
+      font-size: 13px;
+      font-weight: 400;
+      line-height: 1.4;
+      border-radius: 5px;
+    }
+    .add {
+      background-color: #337ab7;
+      border: 1px solid #2e6da4;
+      box-shadow: 0.1rem 0.5rem 1.5rem 0.6rem rgb(91 85 85 / 20%);
+    }
+    .calculate {
+      background-color: rgb(50, 175, 110);
+      border-radius: 5px;
+      border: 1px solid #8a9cbb;
+      box-shadow: 0.1rem 0.5rem 1.5rem 0.6rem rgb(91 85 85 / 20%);
+    }
+  }
+  
+  .report {
+    margin-top: 20px;
+    .receiver-amount {
+      display: flex;
+    }
+    .receiver-amount div {
+      width: 100px;
+      display: flex;
+    }
+  
+    tr {
+      font-weight: 400;
+    }
+  }
