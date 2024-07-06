@@ -8,5 +8,7 @@ import { Component } from '@angular/core';
   styleUrl: './expense-form.component.css'
 })
 export class ExpenseFormComponent {
-
+  constructor(){}
+  public firstName: string ="hello";
+  public lastName: string="hety";
 }
