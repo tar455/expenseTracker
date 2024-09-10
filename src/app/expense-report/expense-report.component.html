@@ -1,1 +1,26 @@
-<p>expense-report works!</p>
+<div class="report">
+
+    <table class="table table-boarder table-dark">
+        <thead>
+            <tr>
+                <th> Payer</th>
+                <th> Transaction (Reciver ===> Amount)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let calcRes of calReportRes">
+                <td>{{calcRes.name}}</td>
+                <td>
+                    <div class="receiver-amount" *ngFor="let friend of calcRes.transaction">
+                        <div>
+                            {{friend.name}}
+                        </div>
+                        <div>
+                            {{friend.amount}}
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

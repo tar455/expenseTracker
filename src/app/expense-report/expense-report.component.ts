@@ -1,12 +1,19 @@
-import { Component } from '@angular/core';
+import { NgFor } from '@angular/common';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-expense-report',
   standalone: true,
-  imports: [],
+  imports: [NgFor],
   templateUrl: './expense-report.component.html',
   styleUrl: './expense-report.component.css'
 })
-export class ExpenseReportComponent {
+export class ExpenseReportComponent implements OnInit{
+  @Input() calReportRes: any = [];
+  constructor(){}
 
+  ngOnInit() : void
+  {
+
+  }
 }
