@@ -1,91 +1,86 @@
 body {
-    background: linear-gradient(to right, #589263de, #334082e6, #8f314b);
-    font-family: Roboto, 'sans-serif';
-    color: white;
-    font-weight: 400;
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    align-items: stretch;
-  }
-  
-  .main-container {
-    margin-top: 4.5rem;
-    display: flex;
-    flex-direction: column;
-    box-shadow: 0.1rem 0.5rem 1.5rem 0.6rem rgb(91 85 85 / 20%);
-    padding: 25px;
-    background: #d97e38b5;
-    border-radius: 10px;
-  
-    .expense-row {
-      display: flex;
-      flex-direction: column;
-      gap: 15px;
-      min-width: 395px;
-      .title {
-        text-align: center;
-      }
-      .form-container {
-        display: flex;
-        flex-direction: column;
-        gap: 8px;
-        .form {
-          display: flex;
-          gap: 8px;
-          .app-form-controls {
-            display: flex;
-            flex-direction: column;
-            label {
-              font-weight: 400;
-            }
-            input {
-              color: black;
-            }
-          }
-          .form-btn__remove {
-            align-self: flex-end;
-          }
-        }
-      }
-    }
-  }
-  
-  .form-buttons {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    button {
-      padding: 3px 6px;
-      font-size: 13px;
-      font-weight: 400;
-      line-height: 1.4;
-      border-radius: 5px;
-    }
-    .add {
-      background-color: #337ab7;
-      border: 1px solid #2e6da4;
-      box-shadow: 0.1rem 0.5rem 1.5rem 0.6rem rgb(91 85 85 / 20%);
-    }
-    .calculate {
-      background-color: rgb(50, 175, 110);
-      border-radius: 5px;
-      border: 1px solid #8a9cbb;
-      box-shadow: 0.1rem 0.5rem 1.5rem 0.6rem rgb(91 85 85 / 20%);
-    }
-  }
-  
-  .report {
-    margin-top: 20px;
-    .receiver-amount {
-      display: flex;
-    }
-    .receiver-amount div {
-      width: 100px;
-      display: flex;
-    }
-  
-    tr {
-      font-weight: 400;
-    }
-  }
+  background: linear-gradient(to right, #733fa6 de, #5a898b e6, #f69d3c);
+  font-family: Roboto, 'sans-serif';
+  color: white;
+  font-weight: 400;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: stretch;
+}
+.main-container {
+  margin-top: 4.5rem;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0.1rem 0.5rem 1.5rem 0.6rem #000;
+  padding: 25px;
+  background: #d97e38 b5;
+  border-radius: 10px;
+}
+.main-container .expense-row {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  min-width: 395px;
+}
+.main-container .expense-row .title {
+  text-align: center;
+}
+.main-container .expense-row .form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.main-container .expense-row .form-container .form {
+  display: flex;
+  gap: 8px;
+}
+.main-container .expense-row .form-container .form .app-form-controls {
+  display: flex;
+  flex-direction: column;
+}
+.main-container .expense-row .form-container .form .app-form-controls label {
+  font-weight: 400;
+}
+.main-container .expense-row .form-container .form .app-form-controls input {
+  color: black;
+}
+.main-container .expense-row .form-container .form .form-btn__remove {
+  align-self: flex-end;
+}
+.form-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.form-buttons button {
+  padding: 3px 6px;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.4;
+  border-radius: 5px;
+}
+.form-buttons .add {
+  background-color: #337ab7;
+  border: 1px solid #2e6da4;
+  box-shadow: 0.1rem 0.5rem 1.5rem 0.6rem #000;
+}
+.form-buttons .calculate {
+  background-color: #32af6e;
+  border-radius: 5px;
+  border: 1px solid #8a9cbb;
+  box-shadow: 0.1rem 0.5rem 1.5rem 0.6rem #000;
+}
+.report {
+  margin-top: 20px;
+}
+.report .receiver-amount {
+  display: flex;
+}
+.report .receiver-amount div {
+  width: 100px;
+  display: flex;
+}
+.report tr {
+  font-weight: 400;
+}

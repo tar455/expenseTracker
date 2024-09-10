@@ -1,1 +1,7 @@
-<app-expense-form></app-expense-form>
+<div class="main-container">
+    <div class="expense-row">
+        <app-expense-form (expenseResult)="calcRes = $event"></app-expense-form>
+        <app-expense-report [calReportRes]="calcRes"></app-expense-report>
+    </div>
+    
+</div>

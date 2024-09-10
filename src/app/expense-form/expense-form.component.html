@@ -1,5 +1,26 @@
-<form method="get">
-    <label>Name:<input type="text"/></label>
-    <label>Last:<input type="text"/></label>
-    <label>Submit:<input type="button" value="Submit"/></label>
-</form>
+<form [formGroup]="expenseForm">
+    <ng-container formArrayName="transaction">
+        <div class="form-container">
+            <ng-container *ngFor="let t of transaction.controls; let i = index">
+                <div class="form" [formGroupName]="i">
+                    <div class="app-form-controls">
+                        <label for="name">Name</label>
+                        <input type="text" formControlName="name">
+                    </div>
+                    <div class="app-form-controls">
+                        <label for="name">Amount</label>
+                        <input type="text" formControlName="amount">
+                    </div>
+                    <div class=".form-btn__remove">
+                        <label for="name">X</label>
+                        <input type="button" value="X" (click)="onRemove(i)">
+                    </div>
+                </div>
+            </ng-container>
+            <div class="form-buttons">
+                <button type="button" class="add" (click)="onAdd()">Add</button>
+                <button type="submit" class="calculate" (click)="OnSubmit()">Calculate</button>
+            </div>
+        </div>
+    </ng-container>
+</form> 
