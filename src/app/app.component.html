@@ -1,7 +1,8 @@
 <div class="main-container">
     <div class="expense-row">
         <app-expense-form (expenseResult)="calcRes = $event"></app-expense-form>
-        <app-expense-report [calReportRes]="calcRes"></app-expense-report>
+        @defer () {
+        <app-expense-report [calReportRes]="calcRes"></app-expense-report>}
     </div>
-    
+
 </div>
